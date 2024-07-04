@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.search_box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_box input{
+    width: 85%;
+    text-transform: capitalize;
+    color: black;
+    font-size: 20px;
+    background-color: #e6f5fb;
+    padding: 12px 15px;
+    border-radius: 14px;
+}
+
+.search_box input::placeholder{
+    color: black;
+}
+
+.search_box button{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: #e6f5fb;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.search_box button:hover{
+    color: white;
+    background-color: #ababab;
+
+}
+
+.weather_body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weather_body img{
+    width: 60%;
+
+}
+
+.weather_box{
+    margin-block: 20px;
+    text-align: center;
+}
+
+.weather_box .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.weather_box .temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+
+}
+
+.weather_box .description{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.weather_details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.humidity, .wind{
+    display: flex;
+    align-items: center;
+
+}
+
+.humidity{
+    margin-left: 20px;
+
+}
+
+.wind{
+    margin-right: 20px;
+}
+
+.weather_details i{
+    font-size: 35px;
+}
+
+.weather_details .text{
+    margin-left: 12px;
+    font-size: 15px;
+}
